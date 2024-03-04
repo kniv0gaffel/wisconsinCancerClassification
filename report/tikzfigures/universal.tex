@@ -1,0 +1,121 @@
+
+\documentclass[tikz,border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{positioning}
+\usetikzlibrary{positioning,calc}
+
+\begin{document}
+\begin{tikzpicture}[
+    node distance=1mm, 
+    box/.style={
+        minimum width=3cm, 
+        minimum height=2cm, 
+        align=center,
+        draw
+    },
+    largebox/.style={
+        minimum width=6cm, 
+        minimum height=3cm, 
+        align=center,
+        draw
+    },
+    plus/.style={
+        draw=none,
+        font=\Large
+    },
+    equals/.style={
+        draw=none,
+        font=\Large
+    }
+]
+
+    % Draw the first plot box and the actual plot with pgfplots
+    \node[box] (out1) {};
+    \begin{axis}[
+        at={(out1.south west)}, anchor=south west, 
+        width=3cm, height=2cm,
+        scale only axis,
+        axis lines=none, % Hide all axis lines
+        ticks=none, % Hide ticks
+    ]
+        \addplot[no marks] file {data1.txt};
+    \end{axis}
+
+    % Place the plus sign
+    \node[plus, right=0mm of out1] (plus1) {+};
+
+    % Draw the second plot box
+    \node[box, right=0mm of plus1] (out2) {};
+    \begin{axis}[
+        at={(out2.south west)}, anchor=south west, 
+        width=3cm, height=2cm,
+        scale only axis,
+        axis lines=none, % Hide all axis lines
+        ticks=none, % Hide ticks
+    ]
+        \addplot[no marks] file {data2.txt};
+    \end{axis}
+
+    % Place the second plus sign
+    \node[plus, right=0mm of out2] (plus2) {+};
+
+    % Draw the third plot box
+    \node[box, right=0mm of plus2] (out3) {};
+    \begin{axis}[
+        at={(out3.south west)}, anchor=south west, 
+        width=3cm, height=2cm,
+        scale only axis,
+        axis lines=none, % Hide all axis lines
+        ticks=none, % Hide ticks
+    ]
+        \addplot[no marks] file {data3.txt};
+    \end{axis}
+
+    % Place the third plus sign
+    \node[plus, right=0mm of out3] (plus3) {+};
+
+    % Draw the fourth plot box
+    \node[box, right=0mm of plus3] (out4) {};
+    \begin{axis}[
+        at={(out4.south west)}, anchor=south west, 
+        width=3cm, height=2cm,
+        scale only axis,
+        axis lines=none, % Hide all axis lines
+        ticks=none, % Hide ticks
+    ]
+        \addplot[no marks] file {data4.txt};
+    \end{axis}
+
+    % Place the fourth plus sign
+    \node[plus, right=0mm of out4] (plus4) {+};
+
+    % ... (previous boxes and plus signs)
+
+    % Draw the last box for the bias term
+    \node[box, right=0mm of plus4, minimum width=1.5cm] (bias) {bias};
+
+    % Calculate the center position for the new plot
+    % This requires the calc TikZ library
+    \coordinate (center) at ($(bias)!0.5!(out1)-(0,3cm)$);
+
+    % Place the equals sign to the left of the center
+    \node[equals] (equals) at ([xshift=-4cm]center) {=};
+
+    % Draw the out5 box centered
+    \node[largebox] (out5) at ([xshift=-5mm]center) {};
+    \begin{axis}[
+        at={(out5.south west)}, anchor=south west, 
+        width=6cm, height=3cm,
+        scale only axis,
+        axis lines=none, % Hide all axis lines
+        ticks=none, % Hide ticks
+    ]
+        \addplot[no marks] file {data5.txt}; % Assuming there is a data5.txt
+    \end{axis}
+
+    % Move the label "out5" to the bottom right corner of the large box
+    \node[anchor=north east, inner sep=2mm] at (out5.north east) {Final output};
+
+\end{tikzpicture}
+\end{document}

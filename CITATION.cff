@@ -1,0 +1,14 @@
+cff-version: 1.2.2
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wiseth"
+  given-names: "Brage"
+- family-names: "Bjørnson Jahr"
+  given-names: "Eirik"
+- family-names: "Camerer Heyerdahl"
+  given-names: "Felix"
+title: "MachineLearningProjects"
+version: 1.0.0
+date-released: 2023-09-14
+url: "https://github.com/bragewiseth/MachineLearningProjects"
+howpublished: "https://github.com/bragewiseth/MachineLearningProjects"

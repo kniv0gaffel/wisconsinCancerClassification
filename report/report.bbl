@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock Book in preparation for MIT Press.
+
+\bibitem{hastie01statisticallearning}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em The Elements of Statistical Learning}.
+\newblock Springer Series in Statistics. Springer New York Inc., New York, NY,
+  USA, 2001.
+
+\bibitem{fys-stk}
+Morten Hjorth-Jensen.
+\newblock Fys-stk4155/3155 applied data analysis and machine learning.
+\newblock
+  \url{https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/intro.html},
+  2021.
+
+\bibitem{HornikEtAl89}
+K.~Hornik, M.~Stinchcombe, and H.~White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock {\em Neural Networks}, 2(5):359--366, 1989.
+
+\bibitem{neutelings_tikzcode}
+Izaak Neutelings.
+\newblock Tikz code for neural networks.
+\newblock \url{https://tikz.net/neural_networks/}, 2021.
+\newblock modified to fit the needs of this project.
+
+\bibitem{nielsenneural}
+Michael~A. Nielsen.
+\newblock Neural networks and deep learning, 2018.
+
+\bibitem{gpt}
+OpenAI.
+\newblock Chat-gpt.
+\newblock \url{https://openai.com/chatgpt}, 2023.
+\newblock Some of the code and formulations are developed with the help from
+  Chat-GPT.
+
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{MachineLearningProjects_2023}
+Brage Wiseth, Felix~Cameren Heyerdahl, and Eirik~Bjørnson Jahr.
+\newblock {MachineLearningProjects}.
+\newblock \url{https://github.com/bragewiseth/MachineLearningProjects},
+  November 2023.
+
+\bibitem{misc_breast_cancer17}
+W.~Wolberg, O.~Mangasarian, N.~Street, and W.~Street.
+\newblock {Breast Cancer Wisconsin (Diagnostic)}.
+\newblock UCI Machine Learning Repository, 1995.
+\newblock {DOI}: https://doi.org/10.24432/C5DW2B.
+
+\end{thebibliography}
