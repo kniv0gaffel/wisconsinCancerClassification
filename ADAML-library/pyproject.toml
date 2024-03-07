@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools","wheel" ]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "ADAMLL"
+version = "0.1.0"
+authors = [
+    { name = "Brage Wiseth", email = "bragewi@uio.no" },
+]
+description = "ADAMLL - Applied Data Analysis and Machine Learning Library. A library for the course FYS-STK3155/4155 at UiO."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "matplotlib",
+    "jax",
+    "jaxlib",
+    "numpy",
+]

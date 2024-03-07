@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+ADAMLL/NN.py
+ADAMLL/__init__.py
+ADAMLL/activations.py
+ADAMLL/optimizers.py
+ADAMLL/plot.py
+ADAMLL/util.py
+ADAMLL.egg-info/PKG-INFO
+ADAMLL.egg-info/SOURCES.txt
+ADAMLL.egg-info/dependency_links.txt
+ADAMLL.egg-info/requires.txt
+ADAMLL.egg-info/top_level.txt

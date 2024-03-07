@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ADAMLL
+Version: 0.1.0
+Summary: ADAMLL - Applied Data Analysis and Machine Learning Library. A library for the course FYS-STK3155/4155 at UiO.
+Author-email: Brage Wiseth <bragewi@uio.no>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+
+If you are missing Jaxlib the package wont work.
+    to install Jaxlib, go to: https://github.com/google/jax#installation
